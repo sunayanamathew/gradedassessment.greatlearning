@@ -1,0 +1,117 @@
+package gradedassignment.week3;
+
+class SuperDepartment{
+	
+	void departmentName() {
+				System.out.println("Super Department");
+	}
+	
+	void getTodaysWork() {
+				System.out.println("No Work as of now");
+	}
+	
+	void getWorkDeadline() {
+				System.out.println("Nil");
+		
+	}
+	
+	void isTodayAHoliday() {
+				System.out.println("Today is not a holiday");
+	}
+
+
+class AdminDepartment extends SuperDepartment{
+		
+		
+		void departmentName() {
+			System.out.println("Admin Department");
+	}
+
+		void getTodaysWork() {
+			System.out.println("Complete your documents Submission");
+	}
+
+		void getWorkDeadline() {
+			System.out.println("Complete by EOD ");
+		}
+}
+class HrDepartment extends SuperDepartment{
+      
+	void departmentName() {
+		System.out.println("Hr Department");
+}
+
+	void getTodaysWork() {
+		System.out.println("Fill today’s worksheet and mark your attendance");
+}
+
+	void getWorkDeadline() {
+		System.out.println("Complete by EOD ");
+	}
+	void doActivity{
+		System.out.println("team Lunch");
+	}
+	}
+class Techdepartment extends SuperDepartment{
+	
+	void departmentName() {
+		System.out.println("Tech Department");
+	}
+	void getTodaysWork() {{
+		System.out.println("Complete coding of module 1");
+}
+
+	void getWorkDeadline() {
+		System.out.println("Complete by EOD ");
+}
+	void getTechStackInformation() {
+		System.out.println(“core Java”);
+	}
+	}
+		
+public class Main{
+	
+
+	 public static void main(String[]args) {
+	    	
+		 		String departmentName;
+		 		String getTodaysWork;
+		 		String getWorkDeadline;
+		 		String isTodayAHoliday;
+		 		String doActivity;
+		 		String getTechStackInformation;
+		 		
+		 		Scanner sc= new Scanner(System.in);
+		 		System.out.println("Enter departmentName: ")
+		 		String str= scan.nextLine();
+		 		
+		 SuperDepartment superDepartment= new SuperDepartment();
+		 		superDepartment.departmentName();
+		 		superDepartment.getTodaysWork();
+		 		superDepartment.getWorkDeadline();
+		 		superDepartment.isTodayAHoliday();
+		 		
+		 Superdepartment admindepartment = new AdminDepartment();
+		     	admindepartment.departmentName();
+		     	admindepartment.getTodaysWork();
+		     	admindepartment.getWorkDeadline();
+		     	
+		Superdepartment hrDepartment = new HrDepartment;
+		     	hrDepartment.departmentName();
+		     	hrDepartment.getTodaysWork();
+		     	hrDepartment.getWorkDeadline();
+		     	hrDepartment.doActivity();
+		     	
+		Superdepartment techdepartment= new TechDepartment;
+				techdepartment.departmentName();
+				techdepartment.getTodaysWork();  
+				techdepartment.getWorkDeadline();
+				techdepartment.getTechStackInformation();
+
+	
+		
+	}
+	
+ 	
+}
+}
